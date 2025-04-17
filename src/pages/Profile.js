@@ -6,9 +6,12 @@ export default function Profile() {
   return (
     <div className="profile-container">
       <div className="profile-inner">
-        {/* Profile Picture */}
-        <div className="profile-pic">
-          <User className="w-12 h-12 text-black" />
+        {/* Profile Picture + Username */}
+        <div className="flex items-start gap-4 mb-4 w-full px-4">
+          <div className="profile-pic">
+            <User className="w-12 h-12 text-black" />
+          </div>
+          <div className="text-xl font-semibold text-gray-800 self-center">@username</div>
         </div>
 
         {/* Stats Row */}
